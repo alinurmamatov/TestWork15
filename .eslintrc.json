@@ -1,0 +1,45 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    // common
+    "no-console": "warn",
+    "camelcase": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-redeclare": "off",
+    "consistent-return": "off",
+
+    // import
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "type",
+          ["parent", "sibling", "index"],
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+
+    // react
+    "react/no-unescaped-entities": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".tsx"] }],
+    "react/function-component-definition": ["warn", { "namedComponents": "arrow-function" }],
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-indent": "off"
+  }
+}
