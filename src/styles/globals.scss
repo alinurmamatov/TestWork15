@@ -1,0 +1,37 @@
+@import 'bootstrap/scss/bootstrap';
+@import './variables.scss';
+
+:root {
+  --background-color: #{$background-color};
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --success-color: #{$success-color};
+  --warning-color: #{$warning-color};
+  --danger-color: #{$danger-color};
+  --light-color: #{$light-color};
+  --dark-color: #{$dark-color};
+  --border-top: #{$border-top};
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border-top);
+}
